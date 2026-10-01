@@ -1,0 +1,14 @@
+IMAGENS DO CURRÍCULO
+
+Nesta pasta estão os três certificados utilizados no projeto.
+
+Arquivos:
+- certificado_ia.png
+- certificado_ciberseguranca.png
+- certificado_blockchain.png
+
+A foto de perfil deve ser colocada nesta mesma pasta com o nome:
+foto_perfil.jpg
+
+A foto pessoal não foi incluída automaticamente porque a imagem original
+precisa ser fornecida novamente como arquivo para ser colocada na pasta.

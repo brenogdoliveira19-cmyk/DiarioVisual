@@ -1,0 +1,917 @@
+:root {
+
+    --blue: #8BB8D8;
+    --blue-dark: #6F9FC3;
+    --blue-light: #EEF7FC;
+    --text: #333333;
+
+}
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+    color: var(--text);
+
+    background: #ffffff;
+
+}
+
+
+
+
+
+
+/* NAVBAR */
+
+
+.navbar {
+
+    padding: 20px 0;
+
+    transition: .4s;
+
+}
+
+
+
+.navbar.scrolled {
+
+    background: rgba(255,255,255,.9);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+.perfil {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    color: var(--text);
+
+}
+
+
+
+.perfil img {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid white;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+.perfil span {
+
+    display: block;
+
+    font-weight: 500;
+
+}
+
+
+
+.perfil small {
+
+    color: var(--blue-dark);
+
+}
+
+
+
+
+
+.nav-link {
+
+    color: #555;
+
+    margin-left: 25px;
+
+    font-weight: 500;
+
+}
+
+
+
+.nav-link.active {
+
+    color: var(--blue-dark)!important;
+
+}
+
+
+
+
+
+
+
+
+
+/* HERO */
+
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 140px 0 180px;
+
+    position: relative;
+
+    overflow: hidden;
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #ffffff 0%,
+
+        #ffffff 55%,
+
+        #EEF7FC 100%
+
+    );
+
+}
+
+
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 150px;
+
+
+    background:
+
+    linear-gradient(
+
+        transparent,
+
+        #ffffff
+
+    );
+
+}
+
+
+
+
+
+
+
+
+/* FOTO PRINCIPAL */
+
+
+.foto-capa {
+
+    width: 420px;
+
+    height: 560px;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 30px;
+
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.15);
+
+
+    transform: rotate(-4deg);
+
+    transition: .5s;
+
+    margin: auto;
+
+}
+
+
+
+.foto-capa img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+}
+
+
+
+.foto-capa:hover {
+
+    transform: rotate(0deg) translateY(-10px);
+
+}
+
+
+
+
+
+
+
+
+
+/* TEXTO HERO */
+
+
+.hero-content {
+
+    max-width: 500px;
+
+    animation: aparecer 1.2s ease;
+
+}
+
+
+
+.assinatura {
+
+    color: var(--blue-dark);
+
+    font-size: .9rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.hero h1 {
+
+
+    font-family: 'Allura', cursive;
+
+
+    font-size: 6rem;
+
+
+    line-height: .85;
+
+
+    color: var(--blue-dark);
+
+
+    margin: 20px 0;
+
+}
+
+
+
+.hero p {
+
+    color: #777;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+}
+
+
+
+.btn-main {
+
+
+    display: inline-block;
+
+
+    margin-top: 30px;
+
+
+    padding: 15px 40px;
+
+
+    border-radius: 50px;
+
+
+    background: var(--blue);
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    transition:.4s;
+
+}
+
+
+
+.btn-main:hover {
+
+    background: var(--blue-dark);
+
+    transform: translateY(-5px);
+
+}
+
+
+
+
+
+
+
+
+
+/* TITULOS */
+
+
+h2 {
+
+
+    font-family:'Allura', cursive;
+
+
+    font-size:4rem;
+
+
+    font-weight:400;
+
+
+    text-align:center;
+
+
+    color:var(--blue-dark);
+
+
+    margin-bottom:60px;
+
+}
+
+
+
+
+
+
+
+
+
+/* FOTOS RECENTES */
+
+
+.momentos {
+
+    padding: 80px 0 120px;
+
+    background:white;
+
+}
+
+
+
+.momentos::before {
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:3px;
+
+    background:var(--blue);
+
+    margin:0 auto 50px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+.carousel {
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+.foto-diario {
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 30px 70px rgba(0,0,0,.15);
+
+
+    transform:rotate(-2deg);
+
+
+    transition:.5s;
+
+}
+
+
+
+.foto-diario:hover {
+
+    transform:rotate(0deg) translateY(-10px);
+
+}
+
+
+
+.foto-diario img {
+
+
+    width:100%;
+
+
+    height:480px;
+
+
+    object-fit:cover;
+
+
+    border-radius:18px;
+
+}
+
+
+
+
+
+.anotacao {
+
+
+    text-align:center;
+
+    padding:30px 20px 10px;
+
+}
+
+
+
+.anotacao span {
+
+
+    color:var(--blue);
+
+
+    font-size:.8rem;
+
+
+    letter-spacing:3px;
+
+
+    text-transform:uppercase;
+
+}
+
+
+
+.anotacao h3 {
+
+
+    font-family:'Allura',cursive;
+
+
+    font-size:3.5rem;
+
+
+    color:var(--blue-dark);
+
+
+    margin:15px 0;
+
+}
+
+
+
+.anotacao p {
+
+
+    color:#777;
+
+
+    font-style:italic;
+
+}
+
+
+
+
+
+.carousel-control-prev-icon,
+
+.carousel-control-next-icon {
+
+    filter:invert(1);
+
+}
+
+
+
+
+
+
+
+
+
+/* COLEÇÕES */
+
+
+.colecoes {
+
+
+    padding:120px 0;
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #ffffff,
+
+        #EEF7FC
+
+    );
+
+}
+
+
+
+
+
+.album {
+
+
+    height:420px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    border-radius:30px;
+
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+
+    transition:.5s;
+
+}
+
+
+
+.album img {
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    transition:.6s;
+
+}
+
+
+
+.album::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+
+    linear-gradient(
+
+        transparent,
+
+        rgba(0,0,0,.65)
+
+    );
+
+}
+
+
+
+
+
+.album-info {
+
+
+    position:absolute;
+
+
+    bottom:25px;
+
+
+    left:25px;
+
+
+    color:white;
+
+
+    z-index:2;
+
+}
+
+
+
+.album-info h3 {
+
+
+    font-family:'Allura',cursive;
+
+
+    font-size:3rem;
+
+
+    margin:0;
+
+}
+
+
+
+
+
+.album:hover {
+
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.album:hover img {
+
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+
+
+    padding:40px;
+
+
+    text-align:center;
+
+
+    color:#777;
+
+}
+
+
+
+
+
+
+
+
+
+/* ANIMAÇÃO */
+
+
+@keyframes aparecer {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:translateY(40px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:translateY(0);
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px) {
+
+
+    .perfil {
+
+        margin:auto;
+
+    }
+
+
+
+    .hero {
+
+        padding:120px 20px 150px;
+
+        text-align:center;
+
+    }
+
+
+
+    .foto-capa {
+
+
+        width:300px;
+
+
+        height:400px;
+
+
+        margin-bottom:60px;
+
+    }
+
+
+
+    .hero h1 {
+
+
+        font-size:4rem;
+
+    }
+
+
+
+    .hero-content {
+
+
+        margin:auto;
+
+    }
+
+
+
+    .foto-diario {
+
+
+        padding:15px;
+
+    }
+
+
+
+    .foto-diario img {
+
+
+        height:330px;
+
+    }
+
+
+
+    .anotacao h3 {
+
+
+        font-size:2.8rem;
+
+    }
+
+
+
+    .album {
+
+
+        height:280px;
+
+    }
+
+
+
+}
